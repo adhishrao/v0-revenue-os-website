@@ -11,7 +11,7 @@ import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import { DemoModal } from "@/components/demo-modal"
 import { Toaster } from "@/components/ui/toaster"
-import { useToast } from "@/hooks/use-toast"
+import { useToast } from "@/components/ui/use-toast"
 
 // ===========================================
 // CONFIGURATION - Update these values to connect your backend
@@ -41,7 +41,6 @@ export default function Home() {
       title: `${featureName}`,
       description: "Click 'Get a Demo' to learn more about this feature.",
     })
-    console.log("[v0] Feature clicked:", featureName)
   }
 
   // Handler for "Learn More" clicks
@@ -50,7 +49,6 @@ export default function Home() {
       title: "Coming Soon",
       description: "Detailed documentation is being prepared.",
     })
-    console.log("[v0] Learn More clicked")
   }
 
   // Handler for pricing plan selection
@@ -60,20 +58,17 @@ export default function Home() {
         title: "Contact Sales",
         description: "Our team will reach out to discuss your enterprise needs.",
       })
-      console.log("[v0] Enterprise plan selected - triggering sales contact")
     } else {
       toast({
         title: `${planName} Plan Selected`,
         description: "Starting your free trial...",
       })
-      console.log("[v0] Plan selected:", planName)
     }
     // You can connect this to a Stripe checkout or your signup flow
   }
 
   // Handler for footer link clicks
-  const handleFooterLinkClick = (linkName: string) => {
-    console.log("[v0] Footer link clicked:", linkName)
+  const handleFooterLinkClick = (_linkName: string) => {
     // Connect to your routing or external links
   }
 

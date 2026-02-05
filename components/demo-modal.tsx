@@ -100,9 +100,7 @@ export function DemoModal({ isOpen, onClose, webhookUrl }: DemoModalProps) {
           throw new Error("Failed to submit request")
         }
       } else {
-        // Log the payload for debugging when no webhook is configured
-        console.log("[v0] Demo request payload (no webhook configured):", payload)
-        // Simulate API delay
+        // Simulate API delay when no webhook is configured
         await new Promise((resolve) => setTimeout(resolve, 1500))
       }
 
@@ -117,8 +115,7 @@ export function DemoModal({ isOpen, onClose, webhookUrl }: DemoModalProps) {
           setIsSuccess(false)
         }, 300)
       }, 2000)
-    } catch (err) {
-      console.error("[v0] Error submitting demo request:", err)
+    } catch (_err) {
       setError("Something went wrong. Please try again.")
     } finally {
       setIsLoading(false)
