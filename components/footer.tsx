@@ -8,7 +8,7 @@ const footerLinks = {
     title: "Product",
     links: [
       { label: "Features", href: "#features" },
-      { label: "How It Works", href: "#how-it-works" },
+      { label: "Testimonials", href: "#testimonials" },
       { label: "Use Cases", href: "#use-cases" },
       { label: "Integrations", href: "#" },
     ],
@@ -56,7 +56,7 @@ export function Footer({ onLinkClick }: FooterProps) {
             <Logo className="mb-4" />
             <p className="text-muted-foreground text-sm max-w-xs leading-relaxed">
               The AI voice agent that responds to every lead in seconds.
-              Webhook-based workflows powered by n8n and Vapi.
+              Proven, reliable, and trusted by businesses worldwide.
             </p>
           </div>
 

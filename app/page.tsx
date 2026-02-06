@@ -5,7 +5,7 @@ import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { TrustBar } from "@/components/trust-bar"
 import { Features } from "@/components/features"
-import { HowItWorks } from "@/components/how-it-works"
+import { Testimonials } from "@/components/testimonials"
 import { UseCases } from "@/components/use-cases"
 import { FAQ } from "@/components/faq"
 import { CTASection } from "@/components/cta-section"
@@ -44,14 +44,6 @@ export default function Home() {
     })
   }
 
-  // Handler for "Learn More" clicks
-  const handleLearnMore = () => {
-    toast({
-      title: "Coming Soon",
-      description: "Detailed documentation is being prepared.",
-    })
-  }
-
   // Handler for footer link clicks
   const handleFooterLinkClick = (_linkName: string) => {
     // Connect to your routing or external links
@@ -63,7 +55,7 @@ export default function Home() {
       <Hero onGetDemo={openDemoModal} />
       <TrustBar />
       <Features onLearnMore={handleFeatureClick} />
-      <HowItWorks onGetDemo={openDemoModal} onLearnMore={handleLearnMore} />
+      <Testimonials />
       <UseCases onGetDemo={openDemoModal} />
       <FAQ />
       <CTASection onGetDemo={openDemoModal} />

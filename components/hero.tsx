@@ -33,7 +33,7 @@ export function Hero({ onGetDemo }: HeroProps) {
           {/* Subheadline - SEO-rich, human-friendly */}
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-2">
             RevenueOS is the AI voice agent that responds to every new lead the moment it arrives.
-            Qualify, book, and convert -- on autopilot with webhook-based workflows.
+            Qualify, book, and convert -- on autopilot. Trusted by hundreds of businesses.
           </p>
 
           {/* CTA Buttons */}
@@ -50,9 +50,9 @@ export function Hero({ onGetDemo }: HeroProps) {
               size="lg"
               variant="outline"
               className="w-full sm:w-auto border-border text-foreground hover:bg-secondary px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-medium bg-transparent"
-              onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              See How It Works
+              See What Clients Say
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </Button>
           </div>

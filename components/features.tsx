@@ -7,32 +7,32 @@ const features = [
   {
     icon: Phone,
     title: "Instant Lead Response",
-    description: "New lead comes in, AI calls within seconds. Speed to lead is the single biggest factor in conversion -- RevenueOS handles it automatically.",
+    description: "New lead comes in, they get a call in seconds. Speed to lead is the single biggest factor in conversion -- and RevenueOS handles it automatically.",
   },
   {
     icon: Clock,
     title: "24/7 Lead Coverage",
-    description: "Leads don't wait for business hours. Your AI voice agent picks up every lead at 2am, on weekends, and during holidays. No gaps.",
+    description: "Leads don't wait for business hours. Every inquiry gets handled at 2am, on weekends, and during holidays. Zero gaps in your pipeline.",
   },
   {
     icon: Bot,
-    title: "AI Lead Qualification",
-    description: "Vapi-powered voice AI has real conversations. It qualifies leads, answers product questions, and books meetings on your calendar.",
+    title: "AI-Powered Conversations",
+    description: "Not a robocall. A real conversation. The AI qualifies leads, answers questions about your business, and books meetings directly on your calendar.",
   },
   {
     icon: BarChart3,
-    title: "Call Analytics Dashboard",
-    description: "Every call is recorded and transcribed. Track pick-up rates, qualification outcomes, and conversion metrics in real time.",
+    title: "Full Call Analytics",
+    description: "Every interaction is tracked and transcribed. See pick-up rates, qualification outcomes, and conversion metrics -- all in real time.",
   },
   {
     icon: Zap,
-    title: "Webhook-Based Workflows",
-    description: "Connects to n8n, Zapier, Make, or any webhook-compatible system. Trigger calls from form submissions, CRM events, or custom automations.",
+    title: "Plugs Into Your Stack",
+    description: "Works with your existing CRM, forms, and marketing tools. No migration, no ripping out what already works. Just faster lead response.",
   },
   {
     icon: Shield,
     title: "Enterprise-Grade Security",
-    description: "End-to-end encryption on all calls and data. SOC 2 aligned practices. Your lead data stays private and compliant.",
+    description: "End-to-end encryption on all calls and data. SOC 2 aligned practices. Your lead data stays private, secure, and compliant.",
   },
 ]
 
@@ -46,10 +46,10 @@ export function Features({ onLearnMore }: FeaturesProps) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance">
-            The Infrastructure Behind Faster Lead Conversion
+            A Proven System That Converts More Leads
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground px-2">
-            RevenueOS is not another chatbot. It{"'"}s a complete AI voice agent system that plugs into your existing stack.
+            RevenueOS is battle-tested infrastructure trusted by sales teams, clinics, agencies, and service businesses.
           </p>
         </div>
 
