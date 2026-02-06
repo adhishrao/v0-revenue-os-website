@@ -9,7 +9,6 @@ import { Menu, X } from "lucide-react"
 const navLinks = [
   { href: "#features", label: "Features" },
   { href: "#how-it-works", label: "How It Works" },
-  { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQ" },
 ]
 
@@ -25,7 +24,7 @@ export function Header({ onGetDemo }: HeaderProps) {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Logo />
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
@@ -51,8 +50,9 @@ export function Header({ onGetDemo }: HeaderProps) {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground p-2 -mr-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -60,23 +60,23 @@ export function Header({ onGetDemo }: HeaderProps) {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col gap-4">
+          <div className="md:hidden py-4 border-t border-border animate-in slide-in-from-top-2 duration-200">
+            <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+                  className="text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors text-sm font-medium py-3 px-3 rounded-lg"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="flex flex-col gap-2 pt-4 border-t border-border">
+              <div className="flex flex-col gap-2 pt-4 mt-2 border-t border-border">
                 <Button variant="ghost" className="justify-start text-muted-foreground">
                   Log in
                 </Button>
-                <Button onClick={onGetDemo} className="bg-primary text-primary-foreground">
+                <Button onClick={() => { onGetDemo?.(); setMobileMenuOpen(false); }} className="bg-primary text-primary-foreground">
                   Get a Demo
                 </Button>
               </div>

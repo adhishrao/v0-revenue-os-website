@@ -8,7 +8,7 @@ const footerLinks = {
     title: "Product",
     links: [
       { label: "Features", href: "#features" },
-      { label: "Pricing", href: "#pricing" },
+      { label: "How It Works", href: "#how-it-works" },
       { label: "Integrations", href: "#" },
       { label: "API Docs", href: "#" },
     ],
@@ -49,13 +49,13 @@ interface FooterProps {
 export function Footer({ onLinkClick }: FooterProps) {
   return (
     <footer className="border-t border-border bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
           {/* Logo and Description */}
-          <div className="col-span-2">
+          <div className="col-span-2 sm:col-span-3 md:col-span-2">
             <Logo className="mb-4" />
             <p className="text-muted-foreground text-sm max-w-xs leading-relaxed">
-              AI-powered voice agents that instantly call your new leads. 
+              AI-powered voice agents that instantly call your new leads.
               Never miss an opportunity again.
             </p>
           </div>
@@ -63,14 +63,14 @@ export function Footer({ onLinkClick }: FooterProps) {
           {/* Links */}
           {Object.entries(footerLinks).map(([key, section]) => (
             <div key={key}>
-              <h3 className="text-foreground font-semibold mb-4">{section.title}</h3>
-              <ul className="space-y-3">
+              <h3 className="text-foreground font-semibold text-sm sm:text-base mb-3 sm:mb-4">{section.title}</h3>
+              <ul className="space-y-2 sm:space-y-3">
                 {section.links.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}
                       onClick={() => onLinkClick?.(link.label)}
-                      className="text-muted-foreground hover:text-foreground text-sm transition-colors"
+                      className="text-muted-foreground hover:text-foreground text-xs sm:text-sm transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -82,8 +82,8 @@ export function Footer({ onLinkClick }: FooterProps) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground text-sm">
+        <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-muted-foreground text-xs sm:text-sm">
             {new Date().getFullYear()} Revenue OS. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
