@@ -88,7 +88,7 @@ export function Footer({ onLinkClick }: FooterProps) {
           </p>
           <div className="flex items-center gap-3">
             <Link
-              href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+              href="https://wa.me/919767976130"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => onLinkClick?.('WhatsApp')}
