@@ -6,23 +6,23 @@ import { ArrowRight } from "lucide-react"
 const steps = [
   {
     number: "01",
-    title: "Lead Comes In",
-    description: "A new lead submits a form, triggers an event, or enters your system through any channel.",
+    title: "A New Lead Enters Your System",
+    description: "A form submission, ad click, CRM event, or any trigger you define. RevenueOS listens to your existing channels via webhook.",
   },
   {
     number: "02",
-    title: "Webhook Fires",
-    description: "Your n8n workflow instantly receives the lead data and triggers our voice agent API via HTTP request.",
+    title: "n8n Automation Fires Instantly",
+    description: "Your n8n workflow receives the lead data and processes it in real time. Route, enrich, and validate -- then trigger the call via HTTP request.",
   },
   {
     number: "03",
-    title: "AI Calls Instantly",
-    description: "Our Vapi-powered voice agent calls the lead within seconds, having a natural conversation.",
+    title: "Vapi AI Voice Agent Calls the Lead",
+    description: "Within seconds, a Vapi-powered AI voice agent dials the lead. The conversation is natural, context-aware, and customized to your business.",
   },
   {
     number: "04",
-    title: "Lead Qualified",
-    description: "The AI qualifies the lead, answers questions, and books a meeting or transfers to your team.",
+    title: "Lead is Qualified and Routed",
+    description: "The AI qualifies the lead based on your criteria, books a meeting on your calendar, or routes to a sales rep. Every call is recorded and transcribed.",
   },
 ]
 
@@ -37,10 +37,10 @@ export function HowItWorks({ onGetDemo, onLearnMore }: HowItWorksProps) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance">
-            How It Works
+            How RevenueOS Responds to Leads in Seconds
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground">
-            From lead capture to conversion in four simple steps.
+            Four steps. Fully automated. From lead capture to AI-powered phone call.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export function HowItWorks({ onGetDemo, onLearnMore }: HowItWorksProps) {
                           onClick={onGetDemo}
                           className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90"
                         >
-                          Get Your Demo Call
+                          Get a Live AI Demo Call
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
                         <Button

@@ -21,19 +21,19 @@ export function Hero({ onGetDemo }: HeroProps) {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-secondary px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-6 sm:mb-8">
             <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
-            <span className="text-xs sm:text-sm text-muted-foreground">AI-Powered Lead Response</span>
+            <span className="text-xs sm:text-sm text-muted-foreground">AI Voice Agent for Instant Lead Response</span>
           </div>
 
-          {/* Headline */}
+          {/* H1 - Primary keyword-rich headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-4 sm:mb-6 text-balance">
-            Never Let a Lead
-            <span className="text-primary"> Go to Trash</span> Again
+            Your Leads Get a Call
+            <span className="text-primary"> in Seconds.</span> Not Hours.
           </h1>
 
-          {/* Subheadline */}
+          {/* Subheadline - SEO-rich, human-friendly */}
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-2">
-            Our AI voice agent instantly calls every new lead the moment they come in.
-            Stop losing revenue to missed opportunities and slow response times.
+            RevenueOS is the AI voice agent that responds to every new lead the moment it arrives.
+            Qualify, book, and convert -- on autopilot with webhook-based workflows.
           </p>
 
           {/* CTA Buttons */}
@@ -44,7 +44,7 @@ export function Hero({ onGetDemo }: HeroProps) {
               className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-medium"
             >
               <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-              Get a Demo Call Now
+              Get a Live AI Demo Call
             </Button>
             <Button
               size="lg"
@@ -57,17 +57,10 @@ export function Hero({ onGetDemo }: HeroProps) {
             </Button>
           </div>
 
-          {/* Social Proof */}
-          <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-border">
-            <p className="text-xs sm:text-sm text-muted-foreground mb-4 sm:mb-6">Trusted by fast-growing companies</p>
-            <div className="flex items-center justify-center gap-4 sm:gap-8 flex-wrap opacity-60">
-              {["TechCorp", "ScaleUp", "GrowthIO", "LeadGen", "SalesForce"].map((company) => (
-                <span key={company} className="text-foreground font-semibold text-sm sm:text-lg">
-                  {company}
-                </span>
-              ))}
-            </div>
-          </div>
+          {/* Trust line */}
+          <p className="mt-6 text-xs sm:text-sm text-muted-foreground">
+            No spam. No waiting. Our AI calls you within seconds.
+          </p>
         </div>
       </div>
     </section>

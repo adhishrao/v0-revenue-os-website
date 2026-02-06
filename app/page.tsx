@@ -3,8 +3,10 @@
 import { useState } from "react"
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
+import { TrustBar } from "@/components/trust-bar"
 import { Features } from "@/components/features"
 import { HowItWorks } from "@/components/how-it-works"
+import { UseCases } from "@/components/use-cases"
 import { FAQ } from "@/components/faq"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
@@ -59,8 +61,10 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Header onGetDemo={openDemoModal} />
       <Hero onGetDemo={openDemoModal} />
+      <TrustBar />
       <Features onLearnMore={handleFeatureClick} />
       <HowItWorks onGetDemo={openDemoModal} onLearnMore={handleLearnMore} />
+      <UseCases onGetDemo={openDemoModal} />
       <FAQ />
       <CTASection onGetDemo={openDemoModal} />
       <Footer onLinkClick={handleFooterLinkClick} />

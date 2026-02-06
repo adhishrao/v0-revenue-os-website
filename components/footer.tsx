@@ -9,8 +9,8 @@ const footerLinks = {
     links: [
       { label: "Features", href: "#features" },
       { label: "How It Works", href: "#how-it-works" },
+      { label: "Use Cases", href: "#use-cases" },
       { label: "Integrations", href: "#" },
-      { label: "API Docs", href: "#" },
     ],
   },
   company: {
@@ -55,8 +55,8 @@ export function Footer({ onLinkClick }: FooterProps) {
           <div className="col-span-2 sm:col-span-3 md:col-span-2">
             <Logo className="mb-4" />
             <p className="text-muted-foreground text-sm max-w-xs leading-relaxed">
-              AI-powered voice agents that instantly call your new leads.
-              Never miss an opportunity again.
+              The AI voice agent that responds to every lead in seconds.
+              Webhook-based workflows powered by n8n and Vapi.
             </p>
           </div>
 

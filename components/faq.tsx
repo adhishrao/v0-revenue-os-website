@@ -9,28 +9,36 @@ import {
 
 const faqs = [
   {
-    question: "How quickly does the AI call new leads?",
-    answer: "Our AI voice agent typically calls within 5-10 seconds of receiving a new lead through your webhook. This instant response dramatically increases your chances of conversion.",
+    question: "How fast does the AI voice agent call new leads?",
+    answer: "RevenueOS triggers a Vapi AI voice call within 5-10 seconds of receiving a new lead through your webhook. Speed to lead is the most critical factor in conversion rates -- studies show that responding within 5 minutes makes you 100x more likely to connect.",
   },
   {
-    question: "Can I customize what the AI says?",
-    answer: "Yes! You can fully customize the AI's script, tone, and conversation flow. We work with you to train the AI on your specific products, services, and qualification criteria.",
+    question: "What is the tech stack behind RevenueOS?",
+    answer: "RevenueOS uses n8n for webhook-based workflow automation and Vapi for AI voice calls. When a lead enters your system, an n8n workflow processes the data and fires an HTTP request to Vapi, which initiates a natural AI-powered phone call. The entire pipeline is configurable and transparent.",
   },
   {
-    question: "What integrations do you support?",
-    answer: "We integrate with n8n, Zapier, Make, and any system that supports webhooks. We also have direct integrations with popular CRMs like HubSpot, Salesforce, and Pipedrive.",
+    question: "Can I customize what the AI voice agent says?",
+    answer: "Yes. You define the AI's script, tone, qualification criteria, and conversation flow. The voice agent is trained on your specific products, services, and objection-handling patterns. You control the experience end to end.",
   },
   {
-    question: "Is there a setup fee?",
-    answer: "No setup fees. You only pay for your monthly subscription. Our team will help you get set up and integrated at no additional cost.",
+    question: "What integrations does RevenueOS support?",
+    answer: "RevenueOS connects to any system that supports webhooks. Out of the box, it integrates with n8n, Zapier, Make, HubSpot, Salesforce, Pipedrive, Google Sheets, and Slack. Custom integrations are available for enterprise clients.",
   },
   {
-    question: "What happens if a lead doesn't answer?",
-    answer: "You can configure automatic follow-up attempts at intervals you specify. The AI can also leave voicemails and send follow-up SMS messages.",
+    question: "What happens if a lead doesn't pick up the call?",
+    answer: "You can configure automatic retry attempts at custom intervals. The AI can also leave a voicemail and trigger follow-up SMS or email sequences through your n8n workflow. No lead falls through the cracks.",
   },
   {
-    question: "Can I listen to call recordings?",
-    answer: "Yes, all calls are recorded and transcribed. You can access them through your dashboard or receive them automatically via webhook to your CRM.",
+    question: "How does AI lead qualification work?",
+    answer: "The AI asks pre-defined qualifying questions during the call -- budget, timeline, decision-making authority, and any custom criteria you set. Qualified leads are routed to your sales team or booked directly onto your calendar. Unqualified leads are tagged and stored for nurture sequences.",
+  },
+  {
+    question: "Is my lead data secure?",
+    answer: "All calls are encrypted end to end. Lead data is processed in secure, SOC 2-aligned infrastructure. We do not sell or share your data. Call recordings and transcripts are accessible only through your dashboard.",
+  },
+  {
+    question: "Can I try RevenueOS before committing?",
+    answer: "Yes. Click the demo button on this page, enter your name and phone number, and our AI voice agent will call you within seconds. You'll experience exactly what your leads will experience. No credit card required.",
   },
 ]
 
@@ -43,7 +51,7 @@ export function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground">
-            Everything you need to know about Revenue OS.
+            Everything you need to know about AI voice agents and instant lead response.
           </p>
         </div>
 
@@ -58,7 +66,7 @@ export function FAQ() {
                 <AccordionTrigger className="text-foreground hover:text-primary text-left text-sm sm:text-base py-4 sm:py-5">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm sm:text-base">
+                <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

@@ -125,9 +125,9 @@ export function DemoModal({ isOpen, onClose, webhookUrl }: DemoModalProps) {
         {!isSuccess ? (
           <>
             <DialogHeader>
-              <DialogTitle className="text-foreground text-xl sm:text-2xl">Get a Demo Call</DialogTitle>
+              <DialogTitle className="text-foreground text-xl sm:text-2xl">Get a Live AI Demo Call</DialogTitle>
               <DialogDescription className="text-muted-foreground text-sm sm:text-base">
-                Enter your details and our AI voice agent will call you within seconds to demonstrate how Revenue OS works.
+                Enter your name and number. Our AI voice agent will call you within seconds. No spam, no waiting -- just the product, live.
               </DialogDescription>
             </DialogHeader>
             <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6 mt-3 sm:mt-4">
