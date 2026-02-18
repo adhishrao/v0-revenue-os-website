@@ -20,7 +20,7 @@ import { useToast } from "@/components/ui/use-toast"
 
 // Your n8n webhook URL that triggers the Vapi call
 // Example: "https://your-n8n-instance.com/webhook/your-webhook-id"
-const N8N_WEBHOOK_URL = "https://n8n.revenueos.services/webhook-test/vapi-call"
+const N8N_WEBHOOK_URL = "https://n8n.revenueos.services/webhook/vapi-call"
 
 // ===========================================
 
