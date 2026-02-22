@@ -8,7 +8,6 @@ import { Menu, X } from "lucide-react"
 
 const navLinks = [
   { href: "#features", label: "Features" },
-  { href: "#testimonials", label: "Testimonials" },
   { href: "#use-cases", label: "Use Cases" },
   { href: "#faq", label: "FAQ" },
 ]
@@ -40,9 +39,7 @@ export function Header({ onGetDemo }: HeaderProps) {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
-              Log in
-            </Button>
+            
             <Button onClick={onGetDemo} className="bg-primary text-primary-foreground hover:bg-primary/90">
               Get a Demo
             </Button>
