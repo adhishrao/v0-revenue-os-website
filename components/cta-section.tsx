@@ -31,15 +31,18 @@ export function CTASection({ onGetDemo }: CTASectionProps) {
               <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Get a Live AI Demo Call
             </Button>
+
+            {/* Replaced Talk to Sales with Calendly */}
             <Button
               size="lg"
               variant="outline"
               className="w-full sm:w-auto border-border text-foreground hover:bg-secondary px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-medium bg-transparent"
-              onClick={() => window.open('mailto:sales@revenueos.io', '_blank')}
+              onClick={() => window.open('https://calendly.com/revenueos-ai/30min', '_blank')}
             >
-              Talk to Sales
+              Book a Strategy Call
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </Button>
+
           </div>
         </div>
       </div>
